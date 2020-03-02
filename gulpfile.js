@@ -1,10 +1,7 @@
 const gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-
-gulp.task('hello', function(done){
-console.log('Привет мир');
-done()
-});
+const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
+const cleanCSS = require('gulp-clean-css')
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -14,4 +11,13 @@ gulp.task('browser-sync', function() {
       }
   });
   gulp.watch("./*.html").on('change', browserSync.reload);
+});
+
+
+
+gulp.task('copy', function() {
+  gulp.src ('./style.css')
+  .pipe(rename( {suffix:'.min'} ))
+  .pipe(cleanCSS({level: 2}))
+  .pipe(gulp.dest('./'));
 });
