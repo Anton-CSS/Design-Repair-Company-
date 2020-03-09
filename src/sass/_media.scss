@@ -1,19 +1,18 @@
-@media screen and ( max-widht: 1200px ){
+@media screen and ( max-width: 1200px ){
 html {
   font-size: 12px;
  }
- .nav{
-    &__link{
-      margin-right: 1rem;
-    }
-  }
+ 
+ .nav__link{
+ margin-right: 1rem;   
+ }
 }
-@media screen and ( max-widht: 992px ){
-  .nav{
+@media screen and ( max-width: 992px ){
+  .menu__nav{
     display: none;
   }
   .hero{
-    &__instagram{
+    .instagram{
       display: none;
     }
     &__content{
@@ -21,21 +20,25 @@ html {
     }
   }
 }
-@media screen and ( max-widht: 570px ){
-.contacts{
-  &__phone{
-    margin-right: 0;
-    text-decoration: none;
+@media screen and ( max-width: 570px ){
+  .phone {
     color:$light;
   }
+  .contacts{
+    &__phone{
+    margin-right: 0;
+    text-decoration: none;
+  }
+
   &__button{
     display: none;
   }
  }
- .title{
-   font-size: 1.64rem;
- }
+ 
  .hero{
+   .title{
+   font-size: 1.64rem;
+   }
    &__scroll-down{
      display: none;
    }

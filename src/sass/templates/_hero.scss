@@ -24,13 +24,14 @@
     width:100%;
     max-width: 82px;
     height: 100%;
+    font-size: 1.1rem;
   }
   .instagram{
     display: flex;
     justify-content: center;
     align-items: center;
-  background:$dark;
-  &__link{
+    background:$dark;
+    &__link{
     display: flex;
     align-items:center;
     text-transform: uppercase;
@@ -46,10 +47,6 @@
         margin-left: 8px;
       }
     }
-  }
-  .title{
-    margin: 0;
-    
   }
   &__scroll-down{
     position: absolute;
@@ -78,20 +75,26 @@
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     font-size: 2.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+
     &__primary {
       color:$primary
     }
   }
   &__content{
     position: relative;
-    max-width: 670px;
+    max-width: 47.85rem;
     margin-left: 4.28rem;
   }
   &__text{
+    line-height: 131%;
     font-size: 1.57rem;
-    max-width: 47.85rem;
+    max-width: 37.85rem;
+    margin: 0 0 3rem 0;
   }
   &__button{
     margin-right: 20px;
+    padding: 20px 35px;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -33,6 +33,8 @@
 }
 
 .button--outline {
+  width: 14.785rem;
+  height: 3.642rem;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -119,13 +121,14 @@ header .menu {
 header .logo {
   color: #E3B873;
   text-transform: uppercase;
+  font-size: 1.075rem;
 }
 
 header .menu__nav .nav__link {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2.857rem;
+  margin-right: 2.85rem;
   -webkit-transition: color 0.2 linear;
   transition: color 0.2 linear;
 }
@@ -178,6 +181,7 @@ header .contacts__phone {
   width: 100%;
   max-width: 82px;
   height: 100%;
+  font-size: 1.1rem;
 }
 
 .hero .instagram {
@@ -216,10 +220,6 @@ header .contacts__phone {
   margin-left: 8px;
 }
 
-.hero .title {
-  margin: 0;
-}
-
 .hero__scroll-down {
   position: absolute;
   left: 0;
@@ -255,6 +255,8 @@ header .contacts__phone {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 .hero .title__primary {
@@ -263,20 +265,23 @@ header .contacts__phone {
 
 .hero__content {
   position: relative;
-  max-width: 670px;
+  max-width: 47.85rem;
   margin-left: 4.28rem;
 }
 
 .hero__text {
+  line-height: 131%;
   font-size: 1.57rem;
-  max-width: 47.85rem;
+  max-width: 37.85rem;
+  margin: 0 0 3rem 0;
 }
 
 .hero__button {
   margin-right: 20px;
+  padding: 20px 35px;
 }
 
-@media screen and (max-widht: 1200px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
   }
@@ -285,11 +290,11 @@ header .contacts__phone {
   }
 }
 
-@media screen and (max-widht: 992px) {
-  .nav {
+@media screen and (max-width: 992px) {
+  .menu__nav {
     display: none;
   }
-  .hero__instagram {
+  .hero .instagram {
     display: none;
   }
   .hero__content {
@@ -297,16 +302,18 @@ header .contacts__phone {
   }
 }
 
-@media screen and (max-widht: 570px) {
+@media screen and (max-width: 570px) {
+  .phone {
+    color: #fff;
+  }
   .contacts__phone {
     margin-right: 0;
     text-decoration: none;
-    color: #fff;
   }
   .contacts__button {
     display: none;
   }
-  .title {
+  .hero .title {
     font-size: 1.64rem;
   }
   .hero__scroll-down {
