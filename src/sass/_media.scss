@@ -105,3 +105,24 @@ html {
     }
   }
 }
+@media screen and (max-width: 376px){
+  header{
+    .menu{
+      margin-left: -14px;
+    } 
+    
+  }
+  .contacts{
+    .menu__contacts{
+      margin-right: 0;
+    }
+    &__phone{
+      margin-right: 0 !important;
+    }
+  }
+  .hero__content{
+    margin-left: 0 !important;
+    margin: 0 auto;
+  }
+} 
+      
