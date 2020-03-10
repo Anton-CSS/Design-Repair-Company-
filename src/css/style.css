@@ -33,8 +33,6 @@
 }
 
 .button--outline {
-  width: 14.785rem;
-  height: 3.642rem;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -70,6 +68,14 @@ body {
   font-size: 1rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 60px;
+}
+
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -94,6 +100,90 @@ body {
   height: 2px;
   background-color: #E3B873;
   margin: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  header .menu .menu__nav .nav__link {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .menu__nav {
+    display: none;
+  }
+  .hero .instagram {
+    display: none !important;
+  }
+  .hero__instagram {
+    display: none;
+  }
+  .hero__content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .row .col .design__card {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row .col .card__text {
+    margin-left: 0;
+  }
+  .types__card {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header .phone {
+    color: #fff !important;
+  }
+  .contacts__phone {
+    margin-right: 0;
+    text-decoration: none;
+  }
+  .contacts__button {
+    display: none;
+  }
+  .hero .title {
+    font-size: 1.64rem;
+  }
+  .hero__scroll-down {
+    display: none !important;
+  }
+  .hero__content {
+    min-width: 22.86rem;
+  }
+  .hero__text {
+    font-size: 1.29rem;
+  }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+  }
+}
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none;
+  }
 }
 
 header {
@@ -182,6 +272,7 @@ header .contacts__phone {
   max-width: 82px;
   height: 100%;
   font-size: 1.1rem;
+  font-family: 'Yeseva One', cursive;
 }
 
 .hero .instagram {
@@ -278,63 +369,95 @@ header .contacts__phone {
 
 .hero__button {
   margin-right: 20px;
-  padding: 20px 35px;
+  padding: 20px 25px;
 }
 
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 12px;
-  }
-  .nav__link {
-    margin-right: 1rem;
-  }
+.types__section-title {
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 992px) {
-  .menu__nav {
-    display: none;
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.row .col {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.row .col .card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: -9.3rem auto 0;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.row .col .card__title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+}
+
+.row .col .card__list {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.5rem;
+}
+
+.row .col .card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 2.6rem;
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .hero .instagram {
-    display: none;
-  }
-  .hero__content {
+  .row .col .card__text {
     margin-left: 0;
   }
-}
-
-@media screen and (max-width: 570px) {
-  .phone {
-    color: #fff;
-  }
-  .contacts__phone {
-    margin-right: 0;
-    text-decoration: none;
-  }
-  .contacts__button {
-    display: none;
-  }
-  .hero .title {
-    font-size: 1.64rem;
-  }
-  .hero__scroll-down {
-    display: none;
-  }
-  .hero__content {
-    min-width: 22.86rem;
-  }
-  .hero__text {
-    font-size: 1.29rem;
-  }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem;
+  .types__card {
+    margin-bottom: 5rem;
   }
 }
 
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none;
-  }
+.design__section-title {
+  margin-bottom: 2rem;
+}
+
+.design__text {
+  max-width: 52.9rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  margin: 0 auto 2.214rem;
 }
 /*# sourceMappingURL=style.css.map */

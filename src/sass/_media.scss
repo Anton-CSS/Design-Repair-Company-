@@ -2,33 +2,75 @@
 html {
   font-size: 12px;
  }
- 
- .nav__link{
- margin-right: 1rem;   
- }
+  header{
+    .menu{
+      .menu__nav{ 
+        .nav__link{
+          margin-right: 1rem;   
+        }
+      }
+    }
+  }
 }
 @media screen and ( max-width: 992px ){
-  .menu__nav{
-    display: none;
+  
+  header{
+    .menu__nav{
+      display: none;
+    }
   }
   .hero{
     .instagram{
-      display: none;
+      display: none !important;
+    }
+    &__instagram{
+    display: none;
     }
     &__content{
       margin-left: 0;
     }
   }
 }
-@media screen and ( max-width: 570px ){
-  .phone {
-    color:$light;
+@media screen and ( max-width: 760px ){
+  .row{
+    .col{
+      .design__card{
+          margin-bottom: 5rem;
+      } 
+    }
   }
+  }
+  
+  @media screen and ( max-width: 760px ){
+    .row{
+      flex-direction: column;
+      align-items: center;
+      .col{
+        .card{
+          &__text{
+            margin-left: 0;
+         }
+        }
+      }
+    }
+    .types{ 
+      &__card{
+        margin-bottom: 5rem;
+      }
+    }
+    }
+
+@media screen and ( max-width: 570px ){
+  header{
+    .phone {
+      color:$light !important;
+    }
+  }  
   .contacts{
     &__phone{
     margin-right: 0;
     text-decoration: none;
-  }
+    }
 
   &__button{
     display: none;
@@ -40,7 +82,7 @@ html {
    font-size: 1.64rem;
    }
    &__scroll-down{
-     display: none;
+     display: none !important;
    }
    &__content{
      min-width: 22.86rem;
