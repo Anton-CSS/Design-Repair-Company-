@@ -120,9 +120,12 @@ html {
       margin-right: 0 !important;
     }
   }
-  .hero__content{
-    margin-left: 0 !important;
-    margin: 0 auto;
+  .hero{
+    min-height:600px;
+    &__content{
+      margin-left: 0 !important;
+      margin: 0 auto;
+    }
   }
 } 
       

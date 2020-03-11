@@ -197,6 +197,9 @@ img {
   .contacts__phone {
     margin-right: 0 !important;
   }
+  .hero {
+    min-height: 600px;
+  }
   .hero__content {
     margin-left: 0 !important;
     margin: 0 auto;
