@@ -198,7 +198,7 @@ img {
     margin-right: 0 !important;
   }
   .hero {
-    min-height: 600px;
+    min-height: 100vh;
   }
   .hero__content {
     margin-left: 0 !important;
@@ -479,5 +479,87 @@ header .contacts__phone {
   font-size: 1.428rem;
   line-height: 1.928rem;
   margin: 0 auto 2.214rem;
+}
+
+.mobal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(19, 19, 19, 0.6);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobal__dialog {
+  position: relative;
+  max-width: 36.36rem;
+  background: #131313 url("/src/img/bg-lines.svg") no-repeat center;
+  padding: 2.357rem 3.5rem 1.928rem;
+  color: #fff;
+}
+
+.mobal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  background: transparent url("/src/img/x-circle.svg") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.mobal__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.357rem;
+  text-align: center;
+  margin: 0 0 2.428rem 0;
+}
+
+.mobal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobal__input {
+  margin-bottom: 3.428rem;
+}
+
+.mobal__input:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.mobal__policy {
+  margin-bottom: 2.7rem;
+}
+
+.mobal__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

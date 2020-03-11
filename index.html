@@ -190,6 +190,26 @@
           </div>
         </section>
       </main>
+      <div class="mobal mobal--visible">
+        <div class="mobal__dialog">
+          <button class="mobal__close"></button>
+          <h3 class="mobal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
+          <form action="#" class="form mobal__form">
+            <label for="user-name" class="label form__label label--light">Имя</label>
+            <input type="text" class="input form__input mobal__input" id="user-name" placeholder="Как вас зовут:">
+            <label for="user-phone" class="label form__label label--light" >Телефон</label>
+            <input type="tel" class="input form__input mobal__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <label for="user-emal" class="label form__label label--light" >Emal</label>
+            <input type="email" class="input form__input mobal__input" id="user-emal" placeholder="Ваш email:">
+            <div class="policy mobal__policy">
+              <input type="checkbox" name="policy__checkbox" id="policy__checkbox" checked>
+              <label for="policy__checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+            </div><!-- /.policy -->
+            <button class="button button--primary mobal__button">Отправить заявку</button>
+          </form>
+        </div><!-- /.mobal__dialog -->
+      </div><!-- /.mobal -->
+      <script src="/src/js/main.js"></script>
     </body>
 </html>
 
