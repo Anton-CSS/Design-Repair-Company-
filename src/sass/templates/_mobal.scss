@@ -1,21 +1,61 @@
-.mobal{
+/* Свойства для усложненного 20 задания
+.wrap { 
+  
   position: fixed;
-  left:0;
-  top:0;
-  right: 0;
-  bottom: 0;
   z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba($dark, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  &--dark{
+    opacity: 1;
+    visibility: visible;
+  }
+}*/
+.mobal{
+  /* Свойства для усложненного 20 задания
+  position: fixed;
+  z-index: 3;
+  left:50%;
+  top:50%;
+  max-width: 506px;
+  max-height: 509px;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%,-50%);
+  &--visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  }*/
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba($dark, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   visibility: hidden;
   &--visible{
-   opacity: 1;
-   visibility: visible;
+    opacity: 1;
+    visibility: visible;
   }
   &__dialog{
     position: relative;

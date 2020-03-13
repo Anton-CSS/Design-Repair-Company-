@@ -1,33 +1,45 @@
 *,*::before,*::after{
   box-sizing: border-box;
   }
-  html{
+
+html{
     font-size: 14px;
   }
-  body{
+body{
     font-family:'Futura Book', sans-serif;
     font-size: 1rem;
   }
-  img{
+
+img{
     max-width: 100%;
   }
-  .section{
+
+.section{
     padding: 60px;
-    &-title{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
+      &--dark{
+        background-color:$dark;
+        color:$light;
+      }
+      &-title{
+        text-align: center;
+          &__heading{
+            text-transform: uppercase;
+            font-family: 'Yeseva One', cursive;
+            &--primary{
+              color:$primary;
+            }
+          }
+      }
       &__img{
         display: flex;
         justify-content: center;
         align-items: center;
-        &::after,&::before{
-        content:"";
-        width: 32px;
-        height: 2px;
-        background-color: $primary;
-        margin: 0 10px;
+          &::after,&::before{
+          content:"";
+          width: 32px;
+          height: 2px;
+          background-color: $primary;
+          margin: 0 10px;
         }
       }
-    }
-  }
+}
