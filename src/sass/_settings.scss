@@ -22,13 +22,34 @@ img{
       }
       &-title{
         text-align: center;
+          &--left{
+            text-align: left;
+          }
           &__heading{
+            line-height: 138%;
             text-transform: uppercase;
             font-family: 'Yeseva One', cursive;
-            &--primary{
+              &--primary{
               color:$primary;
-            }
+              }
           }
+          &__word {
+            display: flex;
+            align-items: center;
+              &::after{
+                content:"";
+                width: 90px;
+                height: 2px;
+                background-color:$primary;
+                margin-left: 2rem;
+              }
+          }
+          &__text{
+            font-size: 1.28rem;
+            line-height: 2.07rem;
+            max-width: 31.57rem;
+            margin-bottom: 3rem;
+          }   
       }
       &__img{
         display: flex;
