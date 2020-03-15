@@ -2,11 +2,15 @@
   &-slide{
     display: flex;
     flex-wrap: wrap;
+      &__value{
+        font-size: 1.071rem;
+        line-height: 1.428rem;
+      }
       &__text{
        flex-basis: 50%;
        margin-bottom: 2.42rem;
-       margin-right: -1px;
-       padding-bottom: 2rem;
+       margin-right: -6.3rem;
+      
      }
       &__heading{
        font-size: 1.285rem;
@@ -35,7 +39,6 @@
       &-prev,&-next{
         bottom:0;
         top:auto;
-        background-size:42px;
         width: 42px;
         height: 14px;
           &:after{
@@ -45,6 +48,7 @@
       &-prev{
         left: 0;
         background: url('/src/img/arrow-prev.svg') no-repeat center;
+        
       }
       &-next{
         background: url('/src/img/arrow-next.svg') no-repeat center;
@@ -56,5 +60,4 @@
 .swiper-container-horizontal>.swiper-pagination-bullets{
   width: auto;
   bottom:0;
-  margin-bottom: -2px;
 }

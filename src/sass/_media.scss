@@ -1,3 +1,12 @@
+@media screen and ( max-width: 1370px ){
+  .swiper{
+    &-slide{
+      &__text{
+        margin-right: -3rem;
+      }
+    }
+  }
+}   
 @media screen and ( max-width: 1200px ){
 html {
   font-size: 12px;
@@ -13,7 +22,14 @@ html {
   }
 }
 @media screen and ( max-width: 992px ){
-  
+  .swiper{
+    &-slide{
+      &__text{
+        margin-right: 0rem;
+      }
+    }
+  }
+}   
   header{
     .menu__nav{
       display: none;
@@ -30,22 +46,64 @@ html {
       margin-left: 0;
     }
   }
-}
+
 @media screen and ( max-width: 760px ){
-  .row{
-    .col{
-      .design__card{
-          margin-bottom: 5rem;
-      } 
+  .section--dark{
+    margin: 0;
+    padding: 0;
+  }
+  .section-title{
+    &--left{
+      text-align: center;
+    }
+    &__heading{
+      &--primary{
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+    &__word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      &::after{
+        display: none;
+      }
+    }
+    &__text{
+      text-align: center;
+      margin: 0 auto 3.571rem;
     }
   }
+  .row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .col-50{
+    width: 100%;
+    order: 1;
+    &--a{
+      order: 0;
+    }
+  }  
+  .col-30{
+      .design__card{
+        margin-bottom: 5rem;
+    }
+  }
+  .swiper-slide__text{
+    margin-right: 0rem;
+  }
+
+}
   
   @media screen and ( max-width: 760px ){
     .row{
       flex-direction: column;
       align-items: center;
-      .col{
+      .col-30{
         .card{
           &__text{
             margin-left: 0;

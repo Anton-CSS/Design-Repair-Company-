@@ -17,8 +17,10 @@ img{
 .section{
     padding: 60px;
       &--dark{
-        background-color:$dark;
+        background: $dark url('/src/img/BACKGROUND\ LINE.svg') no-repeat center;
+        background-size:cover;
         color:$light;
+        padding-top: 9.142rem;
       }
       &-title{
         text-align: center;
@@ -31,6 +33,10 @@ img{
             font-family: 'Yeseva One', cursive;
               &--primary{
               color:$primary;
+              margin: 0;
+              font-size: 1.928rem;
+              line-height: 2,642rem;
+              letter-spacing: -0.07em;
               }
           }
           &__word {
@@ -48,7 +54,7 @@ img{
             font-size: 1.28rem;
             line-height: 2.07rem;
             max-width: 31.57rem;
-            margin-bottom: 3rem;
+            margin-bottom: 3.571rem;
           }   
       }
       &__img{
