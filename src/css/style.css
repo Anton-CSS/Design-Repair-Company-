@@ -713,6 +713,10 @@ header .contacts__phone {
   bottom: 0;
 }
 
+.swiper-container--a {
+  height: 15.714rem;
+}
+
 @media screen and (max-width: 1370px) {
   .swiper-slide__text {
     margin-right: -3rem;
@@ -753,7 +757,7 @@ header .menu__nav {
 @media screen and (max-width: 760px) {
   .section--dark {
     margin: 0;
-    padding: 0;
+    padding: 0 0 5rem;
   }
   .section-title--left {
     text-align: center;

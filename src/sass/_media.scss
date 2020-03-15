@@ -50,7 +50,7 @@ html {
 @media screen and ( max-width: 760px ){
   .section--dark{
     margin: 0;
-    padding: 0;
+    padding: 0 0 5rem;
   }
   .section-title{
     &--left{
@@ -96,7 +96,6 @@ html {
   .swiper-slide__text{
     margin-right: 0rem;
   }
-
 }
   
   @media screen and ( max-width: 760px ){
