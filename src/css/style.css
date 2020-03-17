@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   width: 85%;
   max-width: 1256px;
@@ -120,6 +119,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.142rem;
+}
+
+.policy__label--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .policy__label::before {
@@ -148,6 +154,14 @@
 
 #scroll_top:hover {
   opacity: 1;
+}
+
+label.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border: 1px solid tomato;
 }
 
 @font-face {
@@ -645,47 +659,125 @@ header .contacts__phone {
   margin: 0 auto 2.214rem;
 }
 
-/* Свойства для усложненного 20 задания
-.wrap { 
-  
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($dark, 0.6);
+.footer {
+  background: #131313 url("/src/img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem;
+}
+
+.footer__wrap {
+  max-width: 63.07rem;
+  background-color: #131313;
+  margin: auto;
+  padding: 2.5rem;
+  margin-top: -20rem;
+  margin-bottom: 3.714rem;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 3.214rem;
+  text-transform: uppercase;
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.footer__form {
+  max-width: 37.142rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  &--dark{
-    opacity: 1;
-    visibility: visible;
-  }
-}*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.footer__input {
+  padding-top: 0.3rem;
+  max-height: 24px;
+}
+
+.footer__input-gruop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-bottom: 3.8rem;
+}
+
+.footer__input-gruop--hull-widht {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.footer__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 3.6rem;
+}
+
+.footer__button {
+  margin: auto;
+  padding: 1.285rem 4.785rem;
+}
+
+.footer__menu {
+  background-color: #131313;
+  padding: 4.285rem 0;
+}
+
+.footer__menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__menu .logo {
+  color: #E3B873;
+  text-transform: uppercase;
+  font-size: 1.075rem;
+}
+
+.footer__menu .menu__nav .nav__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 2.85rem;
+  -webkit-transition: color 0.2 linear;
+  transition: color 0.2 linear;
+}
+
+.footer__menu .menu__nav .nav__link:hover {
+  color: #E3B873;
+}
+
+.footer__menu .phone {
+  color: #E3B873;
+}
+
+.footer__menu .contacts__phone {
+  margin-right: 45px;
+}
+
 .mobal {
-  /* Свойства для усложненного 20 задания
-  position: fixed;
-  z-index: 3;
-  left:50%;
-  top:50%;
-  max-width: 506px;
-  max-height: 509px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%,-50%);
-  &--visible{
-    opacity: 1;
-    visibility: visible;
-  }
-  }*/
   position: fixed;
   z-index: 2;
   left: 0;
@@ -750,7 +842,14 @@ header .contacts__phone {
           flex-direction: column;
 }
 
-.mobal__input {
+.mobal__input-gruop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3.428rem;
 }
 
@@ -847,6 +946,10 @@ header .contacts__phone {
 
 .col-50 .swiper-pagination-fraction {
   display: none;
+}
+
+.order {
+  padding-bottom: 30rem;
 }
 
 .order__text {
