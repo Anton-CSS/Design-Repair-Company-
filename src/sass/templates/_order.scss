@@ -1,0 +1,19 @@
+.order{
+  &__text{
+    max-width: 24.071rem;
+    font-size: 1.071rem;
+    line-height: 1.785rem;
+  }
+  &__section-title{
+    margin-bottom: 9.642rem;
+  }
+  &-title{
+    &--primary{
+      font-family: 'Yeseva One';
+      font-size: 1.071rem;
+      line-height: 1.785rem;
+      color:$primary;
+      margin: 0 0 1.142rem 0;
+    }
+  }
+}

@@ -22,15 +22,37 @@ img{
         color:$light;
         padding-top: 9.142rem;
       }
+      &-subtitle{
+        margin-bottom: 18px;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+      }
       &-title{
         text-align: center;
+          &__img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            &::after,&::before{
+              content:"";
+              width: 32px;
+              height: 2px;
+              background-color: $primary;
+              margin: 0 10px;
+            }
+          }
           &--left{
             text-align: left;
-          }
+          } 
+          &--light{
+               color:$light;
+              }
           &__heading{
             line-height: 138%;
             text-transform: uppercase;
             font-family: 'Yeseva One', cursive;
+            margin: 0 0 11px;
               &--primary{
               color:$primary;
               margin: 0;
@@ -38,6 +60,7 @@ img{
               line-height: 2,642rem;
               letter-spacing: -0.07em;
               }
+             
           }
           &__word {
             display: flex;
@@ -56,17 +79,10 @@ img{
             max-width: 31.57rem;
             margin-bottom: 3.571rem;
           }   
+      
+      
       }
-      &__img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-          &::after,&::before{
-          content:"";
-          width: 32px;
-          height: 2px;
-          background-color: $primary;
-          margin: 0 10px;
-        }
-      }
+}
+.section-title--light{
+  color:$light;
 }
