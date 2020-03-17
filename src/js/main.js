@@ -91,6 +91,8 @@ $(document).ready(function (){
         email: true
       }
     },
+    errorElement:"div",
+    errorClass:"invalid",
     messages: {
       userName: {
         required:"Заполните поле",
