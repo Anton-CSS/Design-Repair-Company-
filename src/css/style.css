@@ -21,13 +21,13 @@
       flex-basis: 30%;
 }
 
-.col-50 {
-  width: 50%;
-}
-
 .col-35 {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
+}
+
+.col-50 {
+  width: 50%;
 }
 
 .col-65 {
@@ -974,6 +974,129 @@ header .contacts__phone {
   line-height: 1.785rem;
   color: #E3B873;
   margin: 0 0 1.142rem 0;
+}
+
+.team {
+  padding-bottom: 2.5rem;
+}
+
+.team__section-title {
+  margin-top: -20rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.team__text {
+  max-width: 32rem;
+  margin: auto;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 6rem;
+}
+
+.team__card {
+  position: relative;
+  width: 100%;
+  max-width: 19.4rem;
+  height: 25.6rem;
+  background: url("/src/img/manager.jpg") no-repeat top/cover;
+  margin: 0 auto;
+}
+
+.team__card--a {
+  background: url("/src/img/artist.jpg") no-repeat top/cover;
+}
+
+.team__card--b {
+  background: url("/src/img/foreman.jpg") no-repeat top/cover;
+}
+
+.team__row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.team__row::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  bottom: -8rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.team__card-text {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  width: 100%;
+  max-width: 16.643rem;
+  height: 100%;
+  max-height: 8rem;
+  background-color: #fff;
+}
+
+.team__subtitle {
+  margin-top: 0;
+  font-size: 1.285rem;
+  line-height: 1.857rem;
+  text-align: center;
+  color: #959595;
+}
+
+.team__pricetag {
+  font-family: 'Yeseva One', cursive;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0.8rem 3.2rem;
+}
+
+.team__conclusion {
+  font-size: 1.428rem;
+  line-height: 2.428rem;
+  text-align: center;
+  color: #363636;
+  width: 100%;
+  max-width: 40.57rem;
+  margin: 9rem auto 0;
+}
+
+.card__icon {
+  position: absolute;
+  top: -50px;
+  left: -55px;
+}
+
+.card__title--team {
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  font-size: 1.285rem;
+  line-height: 1.785rem;
+  margin-top: 1.357rem;
+  margin-bottom: 4px;
+}
+
+.client {
+  padding-bottom: 30rem;
 }
 
 @media screen and (max-width: 1370px) {
