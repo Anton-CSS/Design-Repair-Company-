@@ -777,6 +777,12 @@ header .contacts__phone {
   margin-right: 45px;
 }
 
+.footer__map {
+  margin: auto;
+  margin-bottom: 4rem;
+  min-height: 465px;
+}
+
 .mobal {
   position: fixed;
   z-index: 2;
