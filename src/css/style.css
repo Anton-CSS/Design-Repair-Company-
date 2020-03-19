@@ -203,7 +203,7 @@ img {
 }
 
 .section--dark {
-  background: #131313 url("/src/img/BACKGROUND LINE.svg") no-repeat center;
+  background: #131313 url("/src/img/background linear.svg") no-repeat center;
   background-size: cover;
   color: #fff;
   padding-top: 9.142rem;
@@ -977,6 +977,7 @@ header .contacts__phone {
 }
 
 .team {
+  background: url("/src/img/background line-team.svg") no-repeat center/cover;
   padding-bottom: 2.5rem;
 }
 
@@ -1096,7 +1097,113 @@ header .contacts__phone {
 }
 
 .client {
+  background: url("/src/img/background line-team.svg") no-repeat center/cover;
   padding-bottom: 30rem;
+}
+
+.client__text {
+  width: 100%;
+  max-width: 25.714rem;
+  margin: 1.5rem auto 5rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+}
+
+.client__card {
+  background-color: #fff;
+}
+
+.client__card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.client__images {
+  border-radius: 50%;
+}
+
+.client__title {
+  margin-top: 0.928rem;
+  margin-right: 4.071rem;
+  line-height: 1.642rem;
+}
+
+.client__title--a {
+  margin-right: 79px;
+}
+
+.client__title--b {
+  margin-right: 88px;
+}
+
+.client__subtitle {
+  width: 100%;
+  max-width: 324px;
+  font-size: 1.071rem;
+  line-height: 181%;
+  color: #959595;
+  margin-bottom: 3rem;
+}
+
+.client__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 21rem;
+  height: 3.857rem;
+  background-color: #E3B873;
+  margin-left: -1.5rem;
+}
+
+.client__number {
+  font-family: 'Yeseva One', cursive;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.client__number--border {
+  position: relative;
+}
+
+.client__number--border::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  display: block;
+  width: 1px;
+  height: 3.857rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.client__number--small {
+  text-transform: lowercase;
+}
+
+.client__number--right {
+  margin-left: -4px;
 }
 
 @media screen and (max-width: 1370px) {

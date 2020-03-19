@@ -1,3 +1,82 @@
 .client{
-padding-bottom: 30rem; 
+  background:url('/src/img/background line-team.svg') no-repeat center / cover;
+  padding-bottom: 30rem;
+  &__text{
+    width: 100%;
+    max-width: 25.714rem;
+    margin: 1.5rem auto 5rem;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 1.928rem;
+  }
+  &__card{
+    background-color:$light;
+  }
+  &__card-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  &__images{
+    border-radius: 50%; 
+  }
+  &__title{
+    margin-top: 0.928rem;
+    margin-right: 4.071rem;
+    line-height: 1.642rem;
+    &--a{
+      margin-right: 79px;
+    }
+    &--b{
+      margin-right: 88px;
+    }
+}
+  &__subtitle{
+    width: 100%;
+    max-width: 324px;
+    font-size: 1.071rem;
+    line-height: 181%;
+    color:$secondary;
+    margin-bottom: 3rem;
+    
+  }
+  &__pricetag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 21rem;
+    height: 3.857rem;
+    background-color: $primary;
+    margin-left: -1.5rem;
+  }
+  &__number{
+  font-family: 'Yeseva One', cursive;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $light;
+    &--border{
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top:50%;
+        left: 120%;
+        display: block;
+        width: 1px;
+        height: 3.857rem;
+        transform: translate(-50%,-50%);
+        background-color:$light;
+      }
+    }
+    &--small{
+      text-transform: lowercase;
+    }
+    &--right{
+      margin-left: -4px;
+    }
+  }
+  
 }
