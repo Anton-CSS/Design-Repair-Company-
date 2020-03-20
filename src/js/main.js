@@ -104,7 +104,21 @@ $(document).ready(function (){
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('форма отправлена, мы свяжемся с вами через 15 минут');
+          $(form)[0],reset();
+          mobal.removeClass('mobal__visible');
+        },
+        error:function(response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
   });
 
