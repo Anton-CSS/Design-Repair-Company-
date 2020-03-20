@@ -63,7 +63,7 @@
         content: '';
         position: absolute;
         top:50%;
-        left: 120%;
+        left: 150%;
         display: block;
         width: 1px;
         height: 3.857rem;
@@ -74,9 +74,10 @@
     &--small{
       text-transform: lowercase;
     }
+  }
+  &__icon{
     &--right{
-      margin-left: -4px;
+      margin-left: 9px;
     }
   }
-  
 }

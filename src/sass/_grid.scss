@@ -7,6 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  animation: floating 1s linear 0.2s;
+  &__viseble{
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .col{
   &-30{
