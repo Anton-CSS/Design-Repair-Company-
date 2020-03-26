@@ -17,7 +17,7 @@ img{
 .section{
     padding: 60px;
       &--dark{
-        background: $dark url('/src/img/background linear.svg') no-repeat center;
+        background: $dark url('../img/background linear.svg') no-repeat center;
         background-size:cover;
         color:$light;
         padding-top: 9.142rem;
@@ -29,7 +29,7 @@ img{
         text-transform: uppercase;
       }
       &-title{
-        text-align: center;
+          text-align: center;
           &__img{
           display: flex;
           justify-content: center;
@@ -48,10 +48,12 @@ img{
           &--light{
                color:$light;
               }
+          
           &__heading{
             line-height: 138%;
             text-transform: uppercase;
             font-family: 'Yeseva One', cursive;
+            font-weight: normal;
             margin: 0 0 11px;
               &--primary{
               color:$primary;
@@ -61,7 +63,14 @@ img{
               letter-spacing: -0.07em;
               animation: floating 1s linear 0.2s;
               }
-             
+             &--order{
+               color:$primary;
+               margin: 0;
+               font-size: 1.928rem;
+               line-height: 2,642rem;
+               letter-spacing: 1px;
+               animation: floating 1s linear 0.2s;
+             }
           }
           &__word {
             display: flex;
@@ -73,12 +82,33 @@ img{
                 background-color:$primary;
                 margin-left: 2rem;
               }
+              &--order{
+                display: flex;
+                align-items: center;
+                &::after{
+                  content:"";
+                  width: 90px;
+                  height: 2px;
+                  background-color:$primary;
+                  margin-left: 6.2rem;
+              }
+          }
+              
           }
           &__text{
             font-size: 1.28rem;
             line-height: 2.07rem;
             max-width: 31.57rem;
             margin-bottom: 3.571rem;
+            &--order{
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 21px;
+              text-transform: uppercase; 
+              color:$light;
+              letter-spacing: 0.6px;
+              margin-bottom: 1.1rem;
+            }
           }   
       
       

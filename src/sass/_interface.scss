@@ -36,6 +36,8 @@
   font-size: 1.285rem;
   color:$light;
   padding: 0.5rem 0;
+  outline:none;
+ 
   &--light{
     &::placeholder{
       color:$light;
@@ -43,17 +45,17 @@
   }
 }
 .policy{
-  &__checkbox{
+  &-checkbox{
   opacity: 0;
   visibility: hidden;
-  &:checked + {
-    .policy__label{
-      &::before{
-        background:$primary url('/src/img/check.svg') no-repeat center / 0.8rem;
+    &:checked ~ {
+      .policy__label{
+        &::before{
+          background:$primary url('../img/check.svg') no-repeat center / 0.8rem;
+        }
       }
     }
   }
-}
   &__label{
     display: flex;
     align-items: center;
@@ -79,7 +81,7 @@
 	z-index: 4;
 	width: 50px;
 	height: 50px;
-	background: $dark url(/src/img/arrow-down.svg) 50% 50% no-repeat;
+	background: $dark url('../img/arrow-down.svg') 50% 50% no-repeat;
 	border-radius: 50%;
   opacity: 0.5;
   transform: rotate(180deg);
@@ -87,9 +89,29 @@
 #scroll_top:hover {
  	opacity: 1;
 }
+#mobal__policy-checkbox{
+  opacity: 0;
+  visibility: hidden;
+    &:checked ~ {
+      .policy__label{
+        &::before{
+          background:$primary url('../img/check.svg') no-repeat center / 0.8rem;
+        }
+      }
+    }
+}
 label.invalid{
   color: tomato;
 }
 input.invalid{
 border-bottom: 1px solid tomato;
+}
+.wrap{
+  position: relative;
+}
+.background__line{
+  position: absolute;
+  top:-600px;
+  width: 100%;
+  height: 100%;
 }

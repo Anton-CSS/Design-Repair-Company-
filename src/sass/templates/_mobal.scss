@@ -17,10 +17,25 @@
     opacity: 1;
     visibility: visible;
   }
+  .conclusion{
+    display: none !important;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($dark, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &__dialog{
     position: relative;
     max-width: 36.36rem;
-    background: $dark url('/src/img/bg-lines.svg') no-repeat center;
+    background: $dark url('../img/bg-lines.svg') no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color:$light;
   }
@@ -30,7 +45,7 @@
     top: 0;
     width: 2rem;
     height: 2rem;
-    background:transparent url('/src/img/x-circle.svg') no-repeat center;
+    background:transparent url('../img/x-circle.svg') no-repeat center;
     border: none;
     margin: 12px;
     cursor: pointer;

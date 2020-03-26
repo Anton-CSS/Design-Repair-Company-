@@ -1,8 +1,8 @@
 .team{
-  background:url('/src/img/background line-team.svg') no-repeat center / cover;
+  background:url('../img/background line-team.svg') no-repeat center / cover;
   padding-bottom: 2.5rem;
   &__section-title{
-    margin-top: -20rem;
+    margin-top: -38rem;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
   }
@@ -20,13 +20,13 @@
     width: 100%;
     max-width:19.4rem;
     height: 25.6rem;
-    background: url('/src/img/manager.jpg') no-repeat top / cover;
+    background: url('../img/manager.jpg') no-repeat top / cover;
     margin: 0 auto;
     &--a{
-      background: url('/src/img/artist.jpg') no-repeat top / cover;
+      background: url('../img/artist.jpg') no-repeat top / cover;
     }
     &--b{
-      background: url('/src/img/foreman.jpg') no-repeat top / cover;
+      background: url('../img/foreman.jpg') no-repeat top / cover;
     }
   }
   &__row{

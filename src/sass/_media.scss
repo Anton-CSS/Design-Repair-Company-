@@ -1,3 +1,8 @@
+@media screen and ( max-width: 1520px ){
+  .application__row{
+    display: none;
+  }
+}
 @media screen and ( max-width: 1370px ){
   .swiper{
     &-slide{
@@ -6,7 +11,21 @@
       }
     }
   }
-}   
+  header{
+  .menu{
+    .menu__nav{ 
+      .nav__link{
+        margin-right: 1rem;   
+      }
+    }
+  }
+}
+} 
+
+
+
+
+
 @media screen and ( max-width: 1200px ){
 html {
   font-size: 12px;
@@ -20,8 +39,17 @@ html {
       }
     }
   }
+  .application__button{
+    margin: 2rem auto;
+  }
+  .fantasy__col-60{
+    display: none;
+  }
 }
 @media screen and ( max-width: 992px ){
+  .order{
+    display: none;
+  }
   .swiper{
     &-slide{
       &__text{
@@ -29,25 +57,65 @@ html {
       }
     }
   }
-}   
-  // header{
-  //   .menu__nav{
-  //     display: none;
-  //   }
-  // }
   .hero{
-    .instagram{
-      display: none !important;
-    }
     &__instagram{
-    display: none;
+        display: none !important;
     }
     &__content{
       margin-left: 0;
     }
   }
+header{
+    .menu__nav{
+      display: none;
+    }
+  }
+  .team__section-title{
+    margin-top: 25rem;
+  }
+  
+  .team__card{
+   width: 304px;
+   margin-top: 0rem;
+   margin-bottom: 10rem;
+  }
+}
+  
+  
+  
 
 @media screen and ( max-width: 760px ){
+  
+  .control{
+    background: $dark url('../img/background linear.svg') no-repeat center;
+    background-size:cover;
+    margin-top: -2px;
+    color:$light;
+    padding: 0;
+      &__section-title{
+      margin-top: 0;
+    }
+      &__form{
+      flex-direction: column;
+      }
+      &__input-group{
+        margin-top: 2rem;
+      }
+      &__button{
+        margin-top: 2rem;
+      }
+      &__video{
+        width: 100%;
+      }
+      &__video>img{
+        width: 37px;
+        height: 37px;
+      }
+      &__text{
+        font-size: 14px;
+      }
+  }
+  
   .section--dark{
     margin: 0;
     padding: 0 0 5rem;
@@ -96,6 +164,42 @@ html {
   .swiper-slide__text{
     margin-right: 0rem;
   }
+  .application__col-60{
+    display: none;
+  }
+  .client{
+  display: none;
+  }
+  .fantasy{
+   width: 100%;
+   height: 242px;
+  .fantasy__col-40{
+    display: none;
+  }
+ }
+ .section {
+ padding: 20px;
+ }
+ .wrap{
+   background-color:$light;
+   color: $dark;
+ }
+  .design{
+    background-color:$dark;
+    color:$light;
+   .design__text{
+      font-size: 15px;
+    }
+  }
+  .footer__wrap{
+    margin: 0;
+  }
+  .team__conclusion{
+    display: none;
+  }
+  .footer__menu{
+    display: none;
+  }
 }
   
   @media screen and ( max-width: 760px ){
@@ -118,6 +222,15 @@ html {
     }
 
 @media screen and ( max-width: 570px ){
+  body{
+    background-color:$dark;
+    color:$light;
+  }
+  .container{
+    width: 95%;
+    
+  }
+  
   header{
     .phone {
       color:$light !important;
@@ -153,6 +266,10 @@ html {
      margin-bottom: 1.85rem;
    }
  }
+ .application__col-40{
+   display: none;
+ }
+ 
 }
 
 @media screen and (max-height: 520px){
@@ -185,4 +302,3 @@ html {
     }
   }
 } 
-      

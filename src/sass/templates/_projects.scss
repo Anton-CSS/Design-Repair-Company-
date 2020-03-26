@@ -31,7 +31,9 @@ padding-bottom: 30rem;
       object-fit: cover;
     }
   &-pagination{
-
+    &-bullets{
+      width: auto;
+    }
     &-bullet{
       background-color: rgba($light,0.3);
         &-active{
@@ -51,11 +53,12 @@ padding-bottom: 30rem;
       }
       &-prev{
         left: 0;
-        background: url('/src/img/arrow-prev.svg') no-repeat center;
-        
+        background: url('../img/arrow-prev.svg') no-repeat center;
+        z-index: 10;
       }
       &-next{
-        background: url('/src/img/arrow-next.svg') no-repeat center;
+        z-index: 10;
+        background: url('../img/arrow-next.svg') no-repeat center;
       }
         
   
@@ -67,7 +70,4 @@ padding-bottom: 30rem;
 }
 .swiper-container--a{
   height: 15.714rem;
-}
-.col-50 .swiper-pagination-fraction{
-  display: none;
 }

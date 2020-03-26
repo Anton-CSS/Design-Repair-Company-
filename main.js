@@ -1,5 +1,6 @@
 
 $(document).ready(function (){
+  $('.mobal__conclusion').css('display', 'none');
   var mobal = $('.mobal'),
       mobalBtn = $('[data-toggle=mobal]'),
       closeBtn = $('.mobal__close');
@@ -9,28 +10,84 @@ $(document).ready(function (){
       });
       closeBtn.on('click', function(){
         mobal.toggleClass('mobal--visible');
-        $('.conclusion').hide();
-      });
- var mySwiper = new Swiper ('.swiper-container', {
+        $('.mobal__conclusion').css('display', 'none');
+      })
+
+      
+ var mySwiper = new Swiper ('.slider-1', {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects__swiper-pagination',
       type: 'bullets',
       
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.projects__swiper-button-next',
+      prevEl: '.projects__swiper-button-prev',
     },
   })
   
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var mySwiper2 = new Swiper('.slider-2', {  
+    fadeEffect: {
+      crossFade: true
+    },
+    effect: 'fade',
+    pagination: {
+        el: '.order__swiper-pagination',
+        type: 'fraction',
+      },
+    });
+  
+  var mySwiper3 = new Swiper ('.slider-3',{
+    controller: {
+      control: [mySwiper2],
+    },
+    fadeEffect: {
+      crossFade: true
+    },
+    effect: 'fade',
+    pagination: {
+      el: '.order--swiper-pagination',
+    }, 
+    navigation: {
+      nextEl: '.order__swiper-button-next',
+      prevEl: '.order__swiper-button-prev',
+    },
+  });
+
+// расстояние межу пагинациями
+  var next = $('.projects__swiper-button-next');
+  var prev = $('.projects__swiper-button-prev');
+  var bullets = $('.projects__swiper-pagination');
 
   next.css('left', prev.width() + 10 + bullets.width() + 10 )
-  bullets.css('left',prev.width() + 10  )
-
+  bullets.css('left',prev.width() + 10 )
+  
+  $('.order__swiper-button-next').css('left', $('.order__swiper-button-prev').width() + 10 + $('.order--swiper-pagination').width() + 10 )
+  $('.order--swiper-pagination').css('left',$('.order__swiper-button-prev').width() + 10 )
+  
+// клик по клавише
+  $('.key__item--1').on('click',function(){
+   $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+  })
+  $('.key__item--2').on('click',function(){
+    $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+   })
+   $('.key__item--3').on('click',function(){
+    $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+   })
+   $('.key__item--4').on('click',function(){
+    $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+   })
+   $('.key__item--5').on('click',function(){
+    $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+   })
+   $('.key__item--6').on('click',function(){
+    $('.swiper-slide [data-swiper-slide-index="0"]').toggleClass('.swiper-slide-active');
+   })
+  
+  
+  
   new WOW().init();
 
 
@@ -71,11 +128,10 @@ $(document).ready(function (){
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          
           $(form)[0].reset();
           mobal.removeClass('mobal__visible');
           $('.mobal').hide();
-          $('.conclusion').css('visibility', 'visible');
+          $('.mobal__conclusion').css('display', 'block');
         },
         error:function(response) {
           console.error('Ошибка запроса ' + response);
@@ -85,12 +141,28 @@ $(document).ready(function (){
   });
 
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+  var player;
+
+  $('video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'OfZarklsK8Q',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event){
+    event.target.playVideo();
+  }
 
 
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [47.244729, 39.723187],
-            zoom: 9,
+            zoom: 9
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -118,8 +190,7 @@ $(document).ready(function (){
 
     myMap.geoObjects
         .add(myPlacemark)
-    myMap.behaviors.disable('scrollZoom')
-});
+  });
 
 });
 
@@ -141,21 +212,3 @@ $(function(){
 	});
 });
 
-var swiper = new Swiper('.slider-2', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-});
-
-var mySwiper = new Swiper ('.slider-3', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
